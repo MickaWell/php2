@@ -6,5 +6,4 @@ require __DIR__.'/vendor/autoload.php';
 
 //echo $slugify->slugify('ée654684sdf5 ae é ée');
 
-new \OKLM\StringGenerator\PasswordGenerator();
-
+echo \OKLM\StringGenerator\PasswordGenerator::generate(50000, \OKLM\StringGenerator\PasswordGenerator::PASSWORD_HARD);
